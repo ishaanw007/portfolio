@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(27, 248, 27);
+    border-radius:50px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(240, 36, 240);
+    border-radius: 50px;
+}
+.cursor{
+    background-color: chartreuse;
+}
+
+.navbar{
+    background-color: rgb(243, 234, 234);
+    display: flex;
+    font-size: 30px;
+    height: 70px;
+    flex-wrap: wrap;
+    align-self: flex-start; 
+    justify-content: space-between; 
+    
+}
+.navbar ul{
+    display: flex;
+    /* justify-content: space-between; */
+    /* margin: auto; */
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: rgb(240, 36, 240);;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 30px;
+    display: none;
+    
+}
+.navbar li{
+    margin-left: 30px;
+    margin-top: 19px;
+    list-style: none;
+}
+.navbar li a{
+    
+    text-decoration: none;
+    color: black;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    /* list-style: none; */
+    
+}
+.navbar li a:hover{
+background-color: rgb(240, 36, 240); 
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar ul .contact
+{
+    /* position: absolute; */
+    /* right: 80px; */
+    margin-right: 10px;
+    margin-left: 30px;
+    height: 38px;
+    margin-top: 19px;
+    border-radius: 20px;
+    border: 2px solid rgb(240, 36, 240);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+
+
+}
+.navbar ul .contact:hover{
+    background-color: rgb(240, 36, 240);
+    /* color: black; */
+}
+.navbar p{
+    margin-left: 20px;
+    margin-top: 19px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.gotop{
+    position: fixed; 
+   
+    color: rgb(27, 248, 27);
+    background-color: rgb(240, 36, 240);
+    bottom: 16px;
+    right: 32px;
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    text-align: center;
+    /* z-index: 10; */
+}
+.hello{
+    display: flex;
+}
+.anim{
+    
+    margin-top: 20px;
+    width: 50%;
+    height: 80vh;
+}
+
+.line{
+    position: relative;
+    margin-top: 40px;
+    animation-name: leftmove;
+    animation-duration: 1s;
+}
+@keyframes leftmove{
+    0% {
+        
+        right: 0px;
+    }
+
+    25% {
+        
+        right: 10px;
+    }
+
+    75% {
+        
+        right: 20px;
+    }
+
+    100% {
+       
+        right: 40px;
+    }
+}
+.intro h1{
+    font-size: 50px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    /* justify-content: center; */
+    margin-top: 30%;
+}
+.intro p{
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+}
+.social{
+    margin-top: 30px;
+    text-align: center;
+}
+.res{
+   
+    text-align: center;
+}
+.res .resume{
+    margin-top: 30px;
+    border-radius: 30px;
+    border: 2px solid rgb(240, 36, 240);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    width: 30vh;
+
+
+}
+.resume:hover{
+    background-color: rgb(240, 36, 240);
+}
+.skills{
+    display: flex;
+}
+.skills h1{
+    font-size: 50px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+.rhead{
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 5%;
+}
+.tech{
+
+    width: 50%;
+}
+.techname{
+/* border: violet 2px solid; */
+    display: flex;
+    /* width: 33.333333%; */
+    color: white;
+    font-size: 15px;
+    justify-content: space-evenly;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    /* flex: 0 0 192px; */
+    
+}
+.techname figure{
+    text-align: center;
+    margin: 68px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    /* margin-left: 80px; */
+    /* padding: 20px; */
+}
+.techname i{
+    font-size: 45px;
+    color: white;
+    
+}
+.techname i:hover{
+    color: rgb(240, 36, 240);
+}
+.skills .para{
+width: 50%;
+margin: auto;
+}
+.skills p{
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.range{
+    display: flex;
+    width: 100%;
+}
+.anim3{
+        width: 50%;
+
+}
+.bars{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+   align-items: center;
+   width: 50%;
+    
+}
+.bars .per,.bar,.bar1,.bar2{
+    width: 50%;
+    height: 15px;
+    border-radius: 20px;
+   /* margin-top: 10px; */
+}
+.per{
+    background-color: rgb(27, 248, 27);
+
+}
+.bar{
+    display: block;
+    width: 70%;
+    background-color: rgb(240, 36, 240);
+}
+.bar1{
+    display: block;
+    width: 90%;
+    background-color: rgb(240, 36, 240);
+}
+.bar2{
+    display: block;
+    width: 80%;
+    background-color: rgb(240, 36, 240);
+}
+
+
+.front{
+    margin-top: 10px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;;
+}
+.front_head{
+    font-size: 55px;
+    font-family: 'Exo 2', sans-serif;;
+    color: white;
+}
+.projects{
+    margin-top: 85px;
+ 
+}
+.phead{
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    font-family: 'Exo 2', sans-serif;
+}
+.project{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.project h1{
+    color: white;
+    font-size: 35px;
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 55px;
+    text-align: center; 
+    padding: 50px;
+}
+    
+.projects1{
+    width: 25%;
+    height: 250px;
+    border: 2px solid rgb(27, 248, 27);
+    border-radius: 20px;
+    text-align: center;
+   
+   
+}
+.project1{
+    position: relative;
+    perspective: 50px;
+    transition:transform 1.2s ;
+    transform-style: preserve-3d;
+  
+}
+.head,.back{
+    position:absolute;
+    backface-visibility: hidden;
+}
+.projects1:hover .project1{
+    transform: rotateY(180deg);
+}
+.project1 .back{
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    padding: 25px;
+    transform: rotateY(180deg);
+    text-align: center;
+    margin: auto;
+}
+.contact{
+    display: flex;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+}
+.phone{
+    width: 50%;
+    margin-top: 200px;
+}
+.phone h1{
+    font-size: 85px;
+    text-align: center;
+    
+}
+.phone h2{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+.phone p{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.social2{
+    text-align: center;
+    margin-top: 20px;
+}
+.anim4{
+    width: 50%;
+}
+.contactbtn{
+
+   
+    height: 55px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: 2px solid rgb(240, 36, 240);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    /* text-align: center; */
+    /* margin: auto; */
+    font-size: 25px;
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+
+}
+.contactbtn:hover{
+    background-color: rgb(240, 36, 240);
+    transform: scale(0.8); 
+}
+.social img:hover{
+    transform: scale(0.8);
+}
+.social2 img:hover{
+    transform: scale(0.8);
+}
+.footer{
+    background-color: rgb(243, 234, 234);
+    color: black;
+    font-family: 'Exo 2', sans-serif;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+.footer h2{
+    padding: 10px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 767px){
+    
+    .navbar ul{
+        display: none;
+        flex-direction: column;
+        z-index: 10;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+        margin: auto;
+    }
+    .navul.show{
+        display: flex;
+        /* flex-direction: column; */
+        /* margin: 50px; */
+        color: turquoise;
+      
+    }
+   
+    .navbar li a{
+        display: block;
+       /* border: red solid 2px; */
+        color: white;
+       /* width: 100vh; */
+        /* list-style: none; */
+        
+    }
+    .navbar a{
+        margin: auto;
+        text-align: center;
+
+    }
+    .navbar .contact{
+       
+        margin: 10px;
+    }
+    .hamburger{
+        display: block;
+    }    
+    .anim{
+        margin-top: auto;
+        width: 100%;
+        height: 50vh;
+    }
+    .anim .svg{
+        /* margin-top: 20px; */
+        display: block;
+        /* background-color: white */
+        width: 50px;
+        height: 20px
+    }
+
+    .hello{
+        display: block;
+    }
+    .intro h1{
+        margin-top: 5%;
+        font-size: 25px
+    }
+    .intro p{
+        font-size: 15px
+    }
+    .line{
+        width: 90%;
+        position: relative;
+        /* position: absolute; */
+        left: 9%;
+    }
+    .social {
+        margin-top: 10px
+    }
+    .social img{
+        height: 40px;
+        width: 40px
+    }
+    
+    .res .resume{
+        margin-top: 4px;
+        font-size: 15px;
+     
+    
+    
+    }
+    .rhead{
+        font-size: 25px;
+    }
+    .skills{
+        display: block;
+    }
+    .skills h1{
+        margin-top: 2%;
+        font-size: 20px
+    }
+    .tech{
+
+        width: 100%;
+    }
+    .techname{
+        font-size: 10px;
+        text-align: center;
+        
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+    .techname figure{
+        margin: 5px;
+        padding: 10px;
+        /* margin-left: 80px; */
+        /* padding: 20px; */
+    }
+    /* .techname i{
+        margin: 5px;
+        padding: 10px;
+    }
+     */
+    .skills .para{
+        width: 100%;
+    }
+    .skills p{
+        font-size: 18px;
+
+    }
+    .range{
+        display: block;
+    }
+    .anim3{
+        display: none
+    }
+    .bars{
+        width: 100%;
+        /* border: 2px solid red; */
+         height: 300px 
+        /* display: block */
+    }
+    .front{
+        font-size: 15px
+    }
+    .front_head{
+        font-size: 35px;
+    }
+   
+    
+    .projects{
+
+        margin-top: 85px;
+         
+    }
+    .phead{
+        
+        font-size: 25px;
+        
+    }
+    .project{
+        display: block;
+        margin: auto;
+          align-items: center;
+        text-align: center
+    }
+    .project h1{
+      
+        font-size: 25px;
+        
+    }
+        
+    .projects1{
+        margin-top: 30px;
+        width: 95%;
+        height: 200px;
+
+    }
+    .project1 .back{
+        font-size: 11px;
+     
+    }
+    .contactme{
+        margin-top: 20px;
+    }
+     .contact{
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+       
+        
+    } 
+   
+.phone{
+    width: 100%;
+    height: 800px;
+    margin-top: 10px;
+    text-align: center;
+    /* margin: auto; */
+}
+.phone h1{
+  
+    font-size: 25px;
+    text-align: center
+}
+.phone p{
+    font-size: 18px;
+}
+.phone h2{
+    font-size: 20px
+}
+.anim4{
+    display: block;
+    width: 100%
+}
+.phone p{
+    margin-top: 10px;
+    
+}
+.phone h2{
+    margin-top: 10px;
+}
+.phone{
+    height: 60%;
+}
+.social2 img{
+   height: 45px;
+}
+.contactbtn{
+    margin-top: 10px;
+    margin: 20px;
+    height: 35px;
+    width: 200px;
+    font-size: 12px;
+}
+.footer{
+
+    height: 25px;
+}
+.footer h2{
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+    margin: 5px;
+    padding: 10px;
+}
+    
+};
+
+
